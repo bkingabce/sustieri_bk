@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Daily Challenges</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <div class="challenges">
+  <div class="challenges-text">
+    <ion-button color="secondary" routerLink="/app/tabs/daily-challenges/categories"><h3>Get inspiration</h3></ion-button>
+    <p>Step up 5 challenges for today in order to live a more sustainable life.</p>
+    <br>
+  </div>
+    <h3 class="challenges-text">Challenges for the day:</h3>
+      <ion-row>
+        <ion-input [(ngModel)]="challenge.first" name="name" type="text" value="{{challenge.first}}" placeholder=" Type your challenge here..." ><h2></h2></ion-input>
+        <ion-button (click)="taskCompleted1()">✓</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-input [(ngModel)]="challenge.second" name="name" type="text" value="{{challenge.second}}" placeholder=" Type your challenge here..." ><h2> </h2></ion-input>
+        <ion-button (click)="taskCompleted2()">✓</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-input [(ngModel)]="challenge.third" name="name" type="text" value="{{challenge.third}}" placeholder=" Type your challenge here..." ><h2></h2></ion-input>
+        <ion-button (click)="taskCompleted3()">✓</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-input [(ngModel)]="challenge.fourth" name="name" type="text" value="{{challenge.fourth}}" placeholder=" Type your challenge here..." ><h2></h2></ion-input>
+        <ion-button (click)="taskCompleted4()">✓</ion-button>
+      </ion-row>
+      <ion-row>
+        <ion-input [(ngModel)]="challenge.fifth" name="name" type="text" value="{{challenge.fifth}}" placeholder=" Type your challenge here..." ><h2></h2></ion-input>
+        <ion-button (click)="taskCompleted5()">✓</ion-button>
+      </ion-row>
+  </div>
+
+</ion-content>

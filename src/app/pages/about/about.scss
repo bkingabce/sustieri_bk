@@ -15,61 +15,24 @@ ion-toolbar ion-menu-button {
   --color: white;
 }
 
-.about-header {
-  position: relative;
-
-  width: 100%;
-  height: 30%;
-}
-
-.about-header .about-image {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  opacity: 0;
-
-  transition: opacity 500ms ease-in-out;
-}
-
-.about-header .madison {
-  background-image: url(/assets/img/about/madison.jpg);
-}
-.about-header .austin {
-  background-image: url(/assets/img/about/austin.jpg);
-}
-.about-header .chicago {
-  background-image: url(/assets/img/about/chicago.jpg);
-}
-.about-header .seattle {
-  background-image: url(/assets/img/about/seattle.jpg);
-}
-
 .about-info {
   position: absolute;
   margin-top: -10px;
   border-radius: 10px;
   background: var(--ion-background-color, #fff);
+  text-align: justify;
+  padding: 10px;
 }
 
-.about-info h3 {
+.title{
   margin-top: 0;
-}
-
-.about-info ion-list {
-  padding-top: 0;
+  color: #fcba03;
+  padding-top: 20px;
+  font-weight: bold;
 }
 
 .about-info p {
   line-height: 130%;
-
   color: var(--ion-color-dark);
 }
 
@@ -77,14 +40,20 @@ ion-toolbar ion-menu-button {
   margin-inline-end: 32px;
 }
 
-/*
- * iOS Only
- */
+.footprint {
+  height: auto;
+  width: 50%;
+  max-width: 295px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .ios .about-info {
   --ion-padding: 19px;
 }
 
-.ios .about-info h3 {
-  font-weight: 700;
+
+ion-button{
+  display: block;
 }

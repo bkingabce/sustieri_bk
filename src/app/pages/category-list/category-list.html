@@ -1,0 +1,166 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/app/tabs/daily-challenges"></ion-back-button>
+      </ion-buttons>
+    <ion-title>Inspiration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="info">
+    <ion-row>
+      <ion-col><ion-button (click)=detailOn()>Show</ion-button></ion-col>
+      <ion-col><ion-button (click)=detailOff()>Hide</ion-button></ion-col></ion-row>
+    <p>Click on the buttons in order to show or hide the details and tips of the challenge ideas.</p>
+  </div>
+
+  <ion-slides>
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Food</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of foodList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+          <br>
+          <img class="footprint" src="../../../assets/img/food.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Transportation</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of transportationList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+          <br>
+          <img class="footprint" src="../../../assets/img/bike.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Shelter</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of shelterList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+          <br>
+          <img class="footprint" src="../../../assets/img/shelter.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Water use</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of waterList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+          <br>
+          <img class="footprint" src="../../../assets/img/water.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Energy use</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of energyList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+          <br>
+          <img class="footprint" src="../../../assets/img/energy.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Goods and Services</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of goodsAndServicesList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+          <br>
+          <img class="footprint" src="../../../assets/img/goods.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card class="challenge-card">
+        <ion-card-header color="secondary" class="challenge-card-header">
+          <ion-item detail="false" lines="none" color="secondary">
+            <ion-label>
+              <h2 class="label-text">Waste</h2>
+            </ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <div *ngFor="let challenge of wasteManagementList"  detail="false">
+            <br>
+            <h2>{{challenge.name}}</h2>
+            <div *ngIf = "detail"><p>{{challenge.about}}</p></div>
+          </div>
+            <br>
+          <img class="footprint" src="../../../assets/img/waste.png">
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

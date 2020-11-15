@@ -1,0 +1,51 @@
+ion-button{
+  display: block;
+}
+
+.form {
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 150%;
+}
+
+.form-content {
+  background: var(--ion-background-color, #86d48b);
+  box-shadow: 1px 1px 1px 1px rgb(196, 194, 194);
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 150%;
+  margin: 30px;
+}
+
+.header {
+  text-align: center;
+  text-transform:uppercase;
+}
+
+.small {
+  font-size: 70%;
+  line-height: 100%;
+}
+
+.result {
+  text-align: center;
+}
+
+.footprint {
+  height: auto;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.picture {
+  height: auto;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+

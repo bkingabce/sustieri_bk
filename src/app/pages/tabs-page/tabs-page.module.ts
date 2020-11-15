@@ -6,23 +6,19 @@ import { TabsPage } from './tabs-page';
 import { TabsPageRoutingModule } from './tabs-page-routing.module';
 
 import { AboutModule } from '../about/about.module';
-import { MapModule } from '../map/map.module';
-import { ScheduleModule } from '../schedule/schedule.module';
-import { SessionDetailModule } from '../session-detail/session-detail.module';
-import { SpeakerDetailModule } from '../speaker-detail/speaker-detail.module';
-import { SpeakerListModule } from '../speaker-list/speaker-list.module';
+import { DailyChModule } from '../daily-challenges/daily-challenges.module';
+import { CategoryListModule } from '../category-list/category-list.module';
+import { EcologicalFpModule } from '../ecological-footprint/ecological-footprint.module';
 
 @NgModule({
   imports: [
     AboutModule,
     CommonModule,
     IonicModule,
-    MapModule,
-    ScheduleModule,
-    SessionDetailModule,
-    SpeakerDetailModule,
-    SpeakerListModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    DailyChModule,
+    CategoryListModule,
+    EcologicalFpModule
   ],
   declarations: [
     TabsPage,

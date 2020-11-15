@@ -1,77 +1,27 @@
 <ion-content>
-  <ion-header class="ion-no-border">
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-buttons slot="end">
-        <ion-button (click)="presentPopover($event)">
-          <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-header>
-
-  <div class="about-header">
-    <!-- Instead of loading an image each time the select changes, use opacity to transition them -->
-    <div class="about-image madison" [ngStyle]="location === 'madison' && {'opacity': '1'}"></div>
-    <div class="about-image austin" [ngStyle]="location === 'austin' && {'opacity': '1'}"></div>
-    <div class="about-image chicago" [ngStyle]="location === 'chicago' && {'opacity': '1'}"></div>
-    <div class="about-image seattle" [ngStyle]="location === 'seattle' && {'opacity': '1'}"></div>
-  </div>
-
   <div class="about-info">
-    <h3 class="ion-padding-top ion-padding-start">About</h3>
+    <h3 class="title">Sustieri</h3>
 
-    <p class="ion-padding-start ion-padding-end">
-      The Ionic Conference is a one-day conference on {{ conferenceDate | date: 'mediumDate' }} featuring talks from the Ionic team. It is focused on Ionic applications being built with Ionic Framework. This includes migrating apps to the latest version of the framework, Angular concepts, Webpack, Sass, and many other technologies used in Ionic 2. Tickets are completely sold out, and we’re expecting more than 1000 developers – making this the largest Ionic conference ever!
+    <p>
+     With the help of Sustieri, you will have the opportunity to make your lifestyle more sustainable in order to save our planet.
     </p>
-
-    <h3 class="ion-padding-top ion-padding-start">Details</h3>
-
-    <ion-list lines="none">
-      <ion-item>
-        <ion-label>
-          Location
-        </ion-label>
-        <ion-select [(ngModel)]="location" [interfaceOptions]="selectOptions">
-          <ion-select-option value="madison">Madison, WI</ion-select-option>
-          <ion-select-option value="austin">Austin, TX</ion-select-option>
-          <ion-select-option value="chicago">Chicago, IL</ion-select-option>
-          <ion-select-option value="seattle">Seattle, WA</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          Date
-        </ion-label>
-        <ion-datetime
-          displayFormat="MMM DD, YYYY"
-          max="2056"
-          [(ngModel)]="conferenceDate">
-        </ion-datetime>
-      </ion-item>
+    <p>
+      The application gives you motivation and explanations about the steps and challenges that you can take to reduce your ecological footprint.
+    </p>
+    <p>
+      You only have to take three steps:
+    </p>
+    <ion-list>
+      <ion-button routerLink="/app/tabs/ecological-footprint"><h3>Calculate footprint*</h3></ion-button>
+      <ion-button routerLink="/app/tabs/daily-challenges/categories"><h3>Find inspiration</h3></ion-button>
+      <ion-button routerLink="/app/tabs/daily-challenges"><h3>Set your daily goals</h3></ion-button>
     </ion-list>
 
-    <h3 class="ion-padding-top ion-padding-start">Internet</h3>
-
-    <ion-list lines="none">
-      <ion-item>
-        <ion-label>
-          Wifi network
-        </ion-label>
-        <ion-label class="ion-text-end">
-          ica{{conferenceDate | date: 'y'}}
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          Password
-        </ion-label>
-        <ion-label class="ion-text-end">
-          makegoodthings
-        </ion-label>
-      </ion-item>
-    </ion-list>
+    <h3 class="title">*Ecological Footprint</h3>
+    <p>The ecological footprint shows how much land we need to produce the natural resources we consume and absorb the waste we produce.</p>
+    <img class="footprint" src="../../../assets/img/ecofp.png">
+    <p>Human well-being is closely connected with the state of nature. Like all living things, human life and well-being depend on the Earth and its resources. On the other hand,  a man destroys the world on which his future and present are based. As a result, the point will soon come when global environmental crises become regular and there is less and less chance that we will be able to slow down the process before it turns into a disaster.</p>
+    <p>So one of the most important tasks and challenges of humanity now would be to find a way to mitigate the damage done to the Earth.</p>
   </div>
+
 </ion-content>

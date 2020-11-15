@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TabsPage } from './tabs-page';
-import { SchedulePage } from '../schedule/schedule';
 
 
 const routes: Routes = [
@@ -9,45 +8,6 @@ const routes: Routes = [
     path: 'tabs',
     component: TabsPage,
     children: [
-      {
-        path: 'schedule',
-        children: [
-          {
-            path: '',
-            component: SchedulePage,
-          },
-          {
-            path: 'session/:sessionId',
-            loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule)
-          }
-        ]
-      },
-      {
-        path: 'speakers',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../speaker-list/speaker-list.module').then(m => m.SpeakerListModule)
-          },
-          {
-            path: 'session/:sessionId',
-            loadChildren: () => import('../session-detail/session-detail.module').then(m => m.SessionDetailModule)
-          },
-          {
-            path: 'speaker-details/:speakerId',
-            loadChildren: () => import('../speaker-detail/speaker-detail.module').then(m => m.SpeakerDetailModule)
-          }
-        ]
-      },
-      {
-        path: 'map',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../map/map.module').then(m => m.MapModule)
-          }
-        ]
-      },
       {
         path: 'about',
         children: [
@@ -58,13 +18,31 @@ const routes: Routes = [
         ]
       },
       {
-        path: '',
-        redirectTo: '/app/tabs/schedule',
-        pathMatch: 'full'
-      }
+      path: 'daily-challenges',
+        children:[
+          {
+            path: '',
+            loadChildren: () => import('../daily-challenges/daily-challenges.module').then(m => m.DailyChModule)
+          },
+          {
+            path: 'categories',
+            loadChildren: () => import ('../category-list/category-list.module').then(m => m.CategoryListModule)
+          }
+        ]
+      },
+      {
+      path: 'ecological-footprint',
+      children: [
+        {
+          path: '',
+          loadChildren: () => import('../ecological-footprint/ecological-footprint.module').then(m => m.EcologicalFpModule)
+        }
+      ]
+    }
     ]
   }
-];
+]
+
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

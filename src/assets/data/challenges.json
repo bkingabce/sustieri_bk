@@ -1,0 +1,253 @@
+[
+  {
+    "name": "Do not use plastic bags",
+    "category": "Goods",
+    "about": "Our oceans and seas are full of plastic waste. You can recude the amount by not buying plastic bags."
+  },
+  {
+    "name": "Bring your canvas bags",
+    "category": "Goods",
+    "about": "Instead of plastic bags you can bring your own canvas bag. Through this you can recude your waste and make shopping more sustainable. Last but not least, these bags can be so much more colorful and personilzed."
+  },
+  {
+    "name": "Create a shopping list",
+    "category": "Goods",
+    "about": "Before doing the grocery, write a shopping list (and stick to it) in order to prevent buying useless and not needed products."
+  },
+  {
+    "name": "Visit your local market",
+    "category": "Goods",
+    "about": "Visit your local market in order to support local businesses."
+  },
+  {
+    "name": "Buy seasonal fruit and vegetables",
+    "category": "Food",
+    "about": "Eating seasonally reduces the demand for out of season produce which further supports more local produce and supports local farming in your area which means less transportation, less refrigeration and less irradiation of produce."
+  },
+  {
+    "name": "Avoid palm oil",
+    "category": "Food",
+    "about": "People demolishing rain forests for planting more palm oil tree. These tree are againt biodiversity and eliminate animals habitats."
+  },
+  {
+    "name": "Choose Fair Trade products",
+    "category": "Food",
+    "about": "Through Fair Trade products you can support the producer directly and reduce their exploitation."
+  },
+  {
+    "name": "Be waste free for the day",
+    "category": "Waste Management",
+    "about": "Tipp: Try to avoid any product that has plastic package. Try to use every part of the food you eat."
+  },
+  {
+    "name": "Collect the reuseable waste separately",
+    "category": "Waste Management",
+    "about": "Find bins for all of your reuseable waste."
+  },
+  {
+    "name": "Buy selective trash bin",
+    "category": "Waste Management",
+    "about": "This could be the first step for your selective waste management."
+  },
+  {
+    "name": "Shower instead of taking a bath",
+    "category": "Water",
+    "about": "With this change you can significantly reduce your daily water usage."
+  },
+  {
+    "name": "Buy ecofriendly cleaning agents",
+    "category": "Goods",
+    "about": ""
+  },
+  {
+    "name": "Close the taps",
+    "category": "Water",
+    "about": "You can significantly reduce your water usage by closing the taps when they are not needed."
+  },
+  {
+    "name": "Collect rainwater",
+    "category": "Water",
+    "about": "You can use the collected water for watering plants, flushing the toilet, cleaning surfaces and so on."
+  },
+  {
+    "name": "Compost",
+    "category": "Waste Management",
+    "about": "By composting your fruit and vegetable you can reduce the amount of non recycle waste you produce as well as producing your own fertile manure for your plants."
+  },
+  {
+    "name": "Use public transport",
+    "category": "Transportation",
+    "about": "Reduce your carbon footrpint by choosing public transport instead of driving your car. In this case, much more people travel together, so their emission is much smaller."
+  },
+  {
+    "name": "Ride your bike",
+    "category": "Transportation",
+    "about": "Riding bike is not just fun but also sustainable. Your emission is almost zero, and while your are protecting the environment, you are getting more fit as well."
+  },
+  {
+    "name": "Travel by train instead of by airplane",
+    "category": "Transportation",
+    "about": "Travelling by train across countries is much more sustainable than travelling with planes. When you are organizing a trip try to buy train tickets instead of plane tickets. This way of travelling can be even more interesting because you can see all the beautiful landshapes as you acrossing them."
+  },
+  {
+    "name": "Buy LED light bulbs",
+    "category": "Energy",
+    "about": "Change your light bulbs into a much more sustainable version in order to reduce your emission."
+  },
+  {
+    "name": "Lower the temperature",
+    "category": "Energy",
+    "about": "It should not be 25 °C in your house in winter. You can lower this scale and wear a bit warmer clothes inside."
+  },
+  {
+    "name": "Let your friends use your second house",
+    "category": "Shelter",
+    "about": "If you have a second house that is often empty, you should let your friend use it as well. As a result, they no longer have to buy a separate holiday home, which is a much more sustainable decision."
+  },
+  {
+    "name": "Rent others your house through Airbnb",
+    "category": "Shelter",
+    "about": "As a result, your tenant does not stay in a hotel with a much bigger emission, but in a house, so you can cook for yourself during your rental, for example."
+  },
+  {
+    "name": "Think sustainable when you build a house",
+    "category": "Shelter",
+    "about": "AThink about how big a house and rooms you need. It is not necessary to build huge palaces, children do not need a separate room, they can sleep together. Think about future environmental impacts during construction."
+  },
+  {
+    "name": "Turn off the lights",
+    "category": "Energy",
+    "about": "It is quite simple. You only have to be aware and turn off the lights when they are not needed."
+  },
+  {
+    "name": "Turn off the television",
+    "category": "Energy",
+    "about": "Running the television when you are not even in the room? You can reduce your emission by simply turning it off when you leave the room."
+  },
+  {
+    "name": "Do not drink from plastic bottles",
+    "category": "Waste Management",
+    "about": "If the water from your tap is drinkable then consume that to reduce your plastic waste. You can buy portable glass or metal bottle as well."
+  },
+  {
+    "name": "Do not use straws",
+    "category": "Waste Management",
+    "about": "You do not necessarily need a straw for drinking. But if you really want to use it, then switch to metal or bamboo straws"
+  },
+  {
+    "name": "Order coffee into your own reusable cup",
+    "category": "Waste Management",
+    "about": "Instead of buying the plastic portable cups in the café shop, you can bring your own reusable cup."
+  },
+  {
+    "name": "Avoid one-time use products",
+    "category": "Goods",
+    "about": "Buy long-lasting products that you can use for years. Avoid cotton pads, plastic cutlery, balloons."
+  },
+  {
+    "name": "Buy online tickets",
+    "category": "Waste Management",
+    "about": "You can reduce your paper waste by choosing online tickets instead of paper ones."
+  },
+  {
+    "name": "Make your diet plant based",
+    "category": "Food",
+    "about": "The production of plant-based foods requires much less hectares than that of meat-based foods. Try to reduce your daily / weekly meat intake. Find interesting and new plant-based recipes."
+  },
+  {
+    "name": "Do not overeat",
+    "category": "Food",
+    "about": "Do not eat when you are no longer hungry. Unnecessary food intake also increases your ecological footprint."
+  },
+  {
+    "name": "Avoid meat for a day",
+    "category": "Food",
+    "about": "The production of meat is one of the biggest contributors to climate change and the pollution of landscapes and waterways. By eating less of it, you can help to reduce the impact the meat industry has on the Earth. "
+  },
+  {
+    "name": "Drink plant-based milk",
+    "category": "Food",
+    "about": "You can find a great variety of plant-based milk in almost every place nowadays. Almond, rice, or soy? Find your favorite!"
+  },
+  {
+    "name": "Install a programmable or smart thermostat",
+    "category": "Energy",
+    "about": "A programmable thermostat can be set to automatically turn off or reduce heating and cooling during the times when you are asleep or away. You can also saved a lot of money with this option."
+  },
+  {
+    "name": "Purchase energy efficient appliances",
+    "category": "Energy",
+    "about": "A programmable thermostat can be set to automatically turn off or reduce heating and cooling during the times when you are asleep or away. You can also saved a lot of money with this option."
+  },
+  {
+    "name": "Grow your own produce",
+    "category": "Food",
+    "about": "By growing your own fruit and vegetables, you can ensure you are not using pesticides that will contribute to water and air pollution. This will also help to reduce the amount fossil fuels used to transport produce to supermarkets. In addition ot can be so much fun as well."
+  },
+  {
+    "name": "Donate unused items",
+    "category": "Goods",
+    "about": "If you do not wear a piece of clothing anymore, give it to a charity shop or someone you know would make use of it to help reduce waste."
+  },
+  {
+    "name": "Do not waste food",
+    "category": "Food",
+    "about": "As a first step, you need to gauge exactly how much food you need. Do not buy more than that your household can consume."
+  },
+  {
+    "name": "Choose the right businesses",
+    "category": "Goods",
+    "about": "By buying a product you also support the company that made it. For a better world, you should buy products that are sustainably made so you can support green companies."
+  },
+  {
+    "name": "Do not water your grass",
+    "category": "Water",
+    "about": "A green lawn can really be very beautiful, but maintaining this condition in the long run takes a lot of freshwater. Instead of watering, try to protect it from the sun's rays with trees and bushes."
+  },
+  {
+    "name": "Avoid car washer places",
+    "category": "Water",
+    "about": "This way of cleaning requires a huge amount of water. If you really want to wash your car, do it at home."
+  },
+  {
+    "name": "Stop using your toilet as a wastebasket",
+    "category": "Water",
+    "about": "Every tissue you flush away also flushes away five to seven gallons of water."
+  },
+  {
+    "name": "Take shorter showers",
+    "category": "Water",
+    "about": "Limit your showers to the time it takes to soap up, wash down and rise off. Shower for no more than 5 minutes so you can use much less water."
+  },
+  {
+    "name": "Install water-saving shower heads",
+    "category": "Water",
+    "about": "This will cut your shower flow to about three gallons a minute instead of five to ten."
+  },
+  {
+    "name": "Use your dishwasher for full loads only",
+    "category": "Water",
+    "about": "This solution is quite simple but so important. If you like using the dishwasher, then only run it when it is full to save water."
+  },
+  {
+    "name": "Keep a bottle of drinking water in the refrigerator",
+    "category": "Water",
+    "about": "With this small step you will not run the water for making it colder."
+  },
+  {
+    "name": "Plant drought-resistant trees and plants",
+    "category": "Water",
+    "about": "This way you will not need much water for watering and they can be quite pretty as well."
+  },
+  {
+    "name": "Walk for short trips",
+    "category": "Transportation",
+    "about": "You do not have to use your car if the destination is only a kilometer long away. By walking you can reduce your carbon emission and reducing your body fat as well. It is also free."
+  },
+  {
+    "name": "Make your driving green",
+    "category": "Transportation",
+    "about": "With these small steps you can make your driving much greener: service your car regularly; slow down; if you are stopping for more than ten seconds, turn your car off; open your window rather than using your air conditioner."
+  }
+]
+

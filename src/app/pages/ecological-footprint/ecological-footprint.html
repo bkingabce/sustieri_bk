@@ -1,0 +1,406 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ecological Footprint</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<form action="">
+<div *ngIf = "form">
+  <div class="form">
+    <p>Answer the questions below and find out the size of your ecological footprint.</p>
+    <img class="footprint" src="../../../assets/img/earth.png">
+  </div>
+  <div class = "form-content">
+    <h1 class="header">Food</h1>
+  <ol>
+    <li>
+      <select [(ngModel)]="packaging" name="packaging">
+        <option value="all" selected>All</option>
+        <option value="most">Most</option>
+        <option value="half">Half</option>
+        <option value="some">Some</option>
+        <option value="none">None</option>
+     </select> of my food has packaging.
+    </li>
+    <li>
+      On a typical day, I waste
+      <select [(ngModel)]="wasteFood" name="wasteFood">
+        <option selected value="all">All</option>
+        <option value="most">Most</option>
+        <option value="half">Half</option>
+        <option value="some">Some</option>
+        <option value="none">None</option>
+     </select>of my food.
+    </li>
+    <li>
+      <select [(ngModel)]="processed" name="processed">
+        <option selected value="all">All</option>
+        <option value="most">Most</option>
+        <option value="half">Half</option>
+        <option value="some">Some</option>
+        <option value="none">None</option>
+     </select>of my food is processed.
+    </li>
+    <li>
+      I compost my vegetables and fruit.
+      <br>
+        <input type = "radio" name = "compost" id="yes1" value="yes" [(ngModel)]="compost"/>
+        <label for="yes1"> Yes</label>
+      <br>
+      <input type = "radio" name = "compost" id="no1" value="no" [(ngModel)]="compost"/>
+      <label for="no1"> No</label>
+      <br>
+    </li>
+    <li>
+      <select [(ngModel)]="locally" name="locally">
+        <option  value="all">All</option>
+          <option value="most">Most</option>
+          <option value="half">Half</option>
+          <option value="some">Some</option>
+          <option value="none">None</option>
+      </select>of my food is grown locally.
+    </li>
+    <li>
+      I eat
+      <select [(ngModel)]="meat" name="meat">
+        <option selected value="1">meat more than once a day.</option>
+        <option value="2">meat once a day.</option>
+        <option value="3">meat a few times a week.</option>
+        <option value="4">no meat, but do eat dairy/eggs.</option>
+        <option value="5">no animal products.</option>
+     </select>
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/food2.png">
+ </div>
+
+ <div class = "form-content">
+  <h1 class="header">Transportation</h1>
+  <ol>
+    <li>
+      We have
+      <select [(ngModel)]="car" name="car">
+        <option selected value="1">> 2 per driver</option>
+        <option value="2">more than 1 per driver</option>
+        <option value="3">1 per driver</option>
+        <option value="4">less than 1 per driver</option>
+        <option value="5">no car</option>
+    </select> of cars.
+    </li>
+    <li>
+      The time I spend in a vehicle per day is
+      <select [(ngModel)]="inVehicle" name="inVehicle">
+        <option selected value="1">more than 1 hour.</option>
+        <option value="2">30-60 minutes.</option>
+        <option value="3">less than 30 minutes.</option>
+        <option value="4">no time</option>
+     </select>
+    </li>
+    <li>
+      I  travel to school or work by
+      <select [(ngModel)]="travel" name="travel">
+        <option selected value="1">driving myself.</option>
+        <option value="2">driving with others.</option>
+        <option value="3">Bus or Public Transit.</option>
+        <option value="4">Walking/Biking.</option>
+     </select>
+    </li>
+    <li>
+      The size of the car I typically travel in is
+      <select [(ngModel)]="carSize" name="carSize">
+        <option selected value="1">full size.</option>
+        <option value="2">mid-size.</option>
+        <option value="3">compact.</option>
+        <option value="4">no car.</option>
+      </select>
+    </li>
+    <li>
+      Each year, I take
+      <select [(ngModel)]="flights" name="flights">
+        <option selected value="1">more than 2</option>
+        <option value="2">1-2</option>
+        <option value="3">no</option>
+     </select>flights.
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/bike2.png">
+</div>
+
+<div class = "form-content">
+  <h1 class="header">Shelter</h1>
+  <ol>
+    <li>
+      My home is
+      <select [(ngModel)]="homeType" name="homeType">
+        <option selected value="1"> Single House with large yard.</option>
+        <option value="2">Single House with small yard.</option>
+        <option value="3">Townhouse/Attached House </option>
+        <option value="4">Apartment/Condo</option>
+     </select>
+    </li>
+    <li>
+      We own a second home that is often empty
+      <br>
+        <input type = "radio" name = "secondHome" id="yes2" value="yes" [(ngModel)]="secondHome"/>
+        <label for="yes2"> Yes</label>
+        <br>
+        <input type = "radio" name = "secondHome" id="others" value="others" [(ngModel)]="secondHome"/>
+        <label for="others"> Others use the home</label>
+        <br>
+        <input type = "radio" name = "secondHome" id="no" value="no" [(ngModel)]="secondHome"/>
+        <label for="no2"> No</label>
+    </li>
+    <li>
+      In our primary home, excluding bathrooms, there are
+      <select [(ngModel)]="rooms" name="rooms">
+        <option selected value="1">more than 3 rooms per person.</option>
+        <option value="2">2–3 rooms per person.</option>
+        <option value="3">1–2 rooms per person.</option>
+        <option value="4">1 room per person.</option>
+     </select>
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/shelter2.png">
+</div>
+
+<div class = "form-content">
+  <h1 class="header">Water Use</h1>
+  <ol>
+    <li>
+      I typically shower or bathe
+      <select [(ngModel)]="shower" name="shower">
+        <option selected value="1">more than once a day.</option>
+        <option value="2">once a day, more than 10 min.</option>
+        <option value="3">3-4 times a week.</option>
+        <option value="4">no shower or bath.</option>
+     </select>
+    </li>
+    <li>
+      I flush the toilet
+      <select [(ngModel)]="toilet" name="toilet">
+        <option selected value="1">every time I use it.</option>
+        <option value="2">half the time.</option>
+     </select>
+    </li>
+    <li>
+      When I brush my teeth
+      <select [(ngModel)]="teeth" name="teeth">
+        <option selected value="1">I let the water run.</option>
+        <option value="2">sometimes the water is on.</option>
+     </select>
+    </li>
+    <li>
+      We use water saving toilets and low-flush shower heads.
+      <br>
+      <input type = "radio" name = "lowFlush" id="yes3" value="yes" [(ngModel)]="lowFlush"/>
+      <label for="yes3"> Yes</label>
+      <br>
+      <input type = "radio" name = "lowFlush" id="no3" value="no" [(ngModel)]="lowFlush"/>
+      <label for="no3"> No</label>
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/water2.png">
+</div>
+
+<div class = "form-content">
+  <h1 class="header">Energy Use</h1>
+  <ol>
+    <li>
+      In colder months, our house temperature is
+      <select [(ngModel)]="houseTemperature" name="houseTemperature">
+        <option selected value="1">more than 22°C.</option>
+        <option value="2">20-22°C.</option>
+        <option value="3">less than 20°C.</option>
+     </select>
+    </li>
+    <li>
+      We use a dishwasher
+      <select [(ngModel)]="dishwasher" name="dishwasher">
+        <option selected value="1">more than one a day.</option>
+        <option value="2">every day.</option>
+        <option value="3">never.</option>
+     </select>
+    </li>
+    <li>
+      We use compact fluorescent or LED light bulbs in
+      <select [(ngModel)]="LED" name="LED">
+        <option selected value="1">no lights.</option>
+        <option value="2">some lights.</option>
+        <option value="3">all lights.</option>
+     </select>
+    </li>
+    <li>
+      We use
+      <select [(ngModel)]="energyEff" name="energyEff">
+        <option selected value="1">no</option>
+        <option value="2">some</option>
+        <option value="3">all</option>
+     </select> energy efficient appliances.
+    </li>
+    <li>
+      I turn off lights and the television when not in the room.
+      <br>
+      <input type = "radio" name = "turnOff" id="never1" value="never" [(ngModel)]="turnOff"/>
+      <label for="never1"> Never</label>
+      <br>
+      <input type = "radio" name = "turnOff" id="sometimes1" value="sometimes" [(ngModel)]="turnOff"/>
+      <label for="sometimes1"> Sometimes</label>
+      <br>
+      <input type = "radio" name = "turnOff" id="always1" value="always" [(ngModel)]="turnOff"/>
+      <label for="always1"> Always</label>
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/energy2.png">
+</div>
+
+<div class = "form-content">
+  <h1 class="header">Goods & Services</h1>
+  <ol>
+    <li>
+      I change my outfit
+      <select [(ngModel)]="laundry" name="laundry">
+        <option selected value="1">several times</option>
+        <option value="2">once</option>
+        <option value="3">I don’t wash my clothes every time.</option>
+     </select> a day and put it in the laundry.
+    </li>
+    <li>
+      I wear clothes that have been mended
+      <br>
+        <input type = "radio" name = "mended" id="yes4" value="yes" [(ngModel)]="mended"/>
+        <label for="yes4"> Yes</label>
+        <br>
+        <input type = "radio" name = "mended" id="no4" value="no" [(ngModel)]="mended"/>
+        <label for="no4"> No</label>
+    </li>
+    <li>
+      Most of my clothes are purchased new.
+      <br>
+        <input type = "radio" name = "newClothes" id="yes5" value="yes" [(ngModel)]="newClothes"/>
+        <label for="yes5"> Yes</label>
+        <br>
+        <input type = "radio" name = "newClothes" id="no5" value="no" [(ngModel)]="newClothes"/>
+        <label for="no5"> No</label>
+    </li>
+    <li>
+      I donate clothes I do not wear.
+      <br>
+        <input type = "radio" name = "donate" id="yes6" value="yes" [(ngModel)]="donate"/>
+        <label for="yes6"> Yes</label>
+        <br>
+        <input type = "radio" name = "donate" id="no6" value="no" [(ngModel)]="donate"/>
+        <label for="no6"> No</label>
+    </li>
+    <li>
+      I do not wear
+      <select [(ngModel)]="doNotWear" name="doNotWear">
+        <option selected value="1">75%</option>
+        <option value="2">50%</option>
+        <option value="3">25%</option>
+        <option value="4">less than 25%</option>
+     </select> of the clothes in my closet.
+    </li>
+    <li>
+      I buy
+      <select [(ngModel)]="shoes" name="shoes">
+        <option selected value="1">more than 7</option>
+        <option value="2">4-7</option>
+        <option value="3">2-3</option>
+        <option value="4">0-1</option>
+     </select> new pairs of shoes each year.
+    </li>
+    <li>
+      We have
+      <select [(ngModel)]="electronics" name="electronics">
+        <option selected value="1">more than 15</option>
+        <option value="2">10-15</option>
+        <option value="3">5-10</option>
+        <option value="4">less than 5</option>
+     </select>number of electronics at home.
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/goods2.png">
+</div>
+
+<div class = "form-content">
+  <h1 class="header">Waste</h1>
+  <ol>
+    <li>
+      All my garbage today could fit into a
+      <select [(ngModel)]="garbageSize" name="garbageSize">
+        <option selected value="1">large garbage can.</option>
+        <option value="2">small garbage can.</option>
+        <option value="3">shoe box.</option>
+        <option value="4">no trash today</option>
+     </select>
+    </li>
+    <li>
+      I recycle
+      <select [(ngModel)]="recycle" name="recycle">
+          <option selected value="1">none</option>
+          <option value="2">some</option>
+          <option value="3">half</option>
+          <option value="4">most</option>
+          <option value="5">all</option> of my paper, cans, glass, and plastic.
+      </select>
+    </li>
+    <li>
+      I reuse items before placing them in the trash.
+      <br>
+        <input type = "radio" name = "reuseItems" id="yes7" value="yes" [(ngModel)]="reuseItems"/>
+        <label for="yes7"> Yes</label>
+        <br>
+        <input type = "radio" name = "reuseItems" id="no7" value="no" [(ngModel)]="reuseItems"/>
+        <label for="no7"> No</label>
+    </li>
+    <li>
+      I repair items before placing them in the trash.
+      <br>
+        <input type = "radio" name = "repairItems" id="yes8" value="yes" [(ngModel)]="repairItems"/>
+        <label for="yes8"> Yes</label>
+        <br>
+        <input type = "radio" name = "repairItems" id="no8" value="no" [(ngModel)]="repairItems"/>
+        <label for="no8"> No</label>
+    </li>
+    <li>
+      I use my own bags instead of ones provided by stores.
+      <br>
+        <input type = "radio" name = "ownBags" id="yes9" value="yes" [(ngModel)]="ownBags"/>
+        <label for="yes9"> Yes</label>
+        <br>
+        <input type = "radio" name = "ownBags" id="no9" value="no" [(ngModel)]="ownBags"/>
+        <label for="no9"> No</label>
+    </li>
+    <li>
+      I shop online
+      <select [(ngModel)]="onlineShop" name="onlineShop">
+        <option selected value="1">more than 15</option>
+        <option value="2">10-15</option>
+        <option value="3">5-10</option>
+        <option value="4">less than 5</option>
+        <option value="5">zero</option>
+     </select>times a year.
+    </li>
+  </ol>
+  <img class="picture" src="../../../assets/img/waste2.png">
+</div>
+
+<div class=form>
+  <ion-button (click)=footprintCalc() color="secondary"><h3>Calculate footprint</h3></ion-button>
+</div>
+</div>
+</form>
+<div *ngIf = "szamolte" class=form>
+  <h3 class="result">Ecological Footprint: <b color="primary">{{hectar}}</b> hectars</h3>
+  <h3 class="result"><b>{{earth}}</b> Earth*</h3>
+  <div class="form">
+    <img class="footprint" src="../../../assets/img/earth.png">
+  </div>
+  <ion-button routerLink="/app/tabs/daily-challenges" color="primary"><h3>What can I do?</h3></ion-button>
+  <ion-button (click)=reCalc() color="secondary"><h3>Recalculate</h3></ion-button>
+  <p class="small">*It would take this many Earths to meet the needs of humanity if everyone lived and consumed like you.</p>
+</div>
+</ion-content>
+
